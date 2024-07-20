@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;1,200;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap code  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- costumize Style file  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font Awosome  -->
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/fontawesome.css "
+    />
+    <title>Website with JS</title>
+  </head>
+  <body>
+    <div id="showContent">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark m-auto navPara position-absolute top-0 w-100"
+      >
+        <div
+          class="container-sm myContainer d-flex justify-content-center align-items border-bottom"
+        >
+          <a class="navbar-brand fs-2" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light fs-5 me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >صمم متجرك</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  أدوات التاجر
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="homePage.html"
+                      >الصفحة الرئيسية</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="seller calculator.html"
+                      >حاسبة التاجر</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="editor.html">محرر التاجر</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >نشرات التاجر</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">أخبار </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ======================================================================================================= -->
+
+      <!-- start landing page -->
+      <section class="bg-dark text-dark text-center h-50">
+        <div class="pt-5 myContainer introPara">
+          <div class="container-sm">
+            <div
+              class="text-light d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="fw-bold fs-1 text-warning">صمم متجرك بنفسك</h1>
+              <p class="w-50 fs-4">
+                اختر التصميم المناسب لمتجرك , ارسم بنفسك وحمل التصميم الخاص فيك
+                بضغطة زر , يمكننا مساعدتك في تصميم المتجر الخاص فيك , تواصل معنا
+                الآن
+              </p>
+              <div
+                class="actionBtn d-flex justify-content-center gap-2 align-items-center"
+              >
+                <button class="primaryBtn">طلب تصميم / استشارة</button>
+                <button class="secondaryBtn">ابدأ بتخصيص تصاميم خاصة</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <figure
+                class="d-flex justify-content-center align-items-center position-relative"
+              >
+                <!-- <img
+                class="introImg position-absolute z-3"
+                src="images/mobile design.webp"
+                alt="صورة واجهة مستخدم لجوال"
+              /> -->
+
+                <figcaption></figcaption>
+              </figure>
+              <div class="introBox"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end landing page -->
+      <!-- ======================================================================================================= -->
+      <!-- start project title  -->
+      <!-- add slider items samples  -->
+      <section class="">
+        <div
+          class="myContainer titlePara d-flex align-items-center justify-content-center"
+        ></div>
+      </section>
+      <!-- end project title  -->
+      <!-- start workshop paragraph  -->
+      <section class="">
+        <div class="container-sm myContainer">
+          <div class="workShop row">
+            <div class="col settingBtns position-relative">
+              <div
+                class="position-sticky quickBtns d-flex justify-content-center align-items-center text-center flex-column"
+              >
+                <button class="cleanBtn top-0" id="clearAll">
+                  <i class="fa-solid fa-broom p-1"></i>
+                </button>
+                <button id="backBtn" class="backBtn">
+                  <i class="fa-solid fa-rotate-left"></i>
+                </button>
+              </div>
+            </div>
+            <div class="toolsGroup col align-items text-light-emphasis">
+              <div class="container-sm myContainer">
+                <div class="text-center">
+                  <h2 class="fs-1 text-warning">
+                    اليوم أنت التاجر والمطور
+                    <span>... </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>بيانات الصنف :</h2>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-column"
+                  >
+                    <div class="mb-4">
+                      <label for="itemImg">اختر صورة الصنف</label>
+                      <input type="file" id="inpItemImg" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemName" class=""> اسم الصنف</label>
+                      <input type="text" id="inpItemName" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemDes" class=""> أصف وصف</label>
+                      <input type="text" id="inpItemDes" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemPrice" class=""> أصف سعرالصنف</label>
+                      <input type="number" id="inpItemPrice" />
+                    </div>
+                    <label for="">اختر العملة</label>
+                    <select name="" id="currencyChoice">
+                      <option value=".SR">SR.</option>
+                      <option value=".$">$.</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>تنسيق الصورة :</h2>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-column"
+                  >
+                    <div class="mb-4">
+                      <label for="inpImgSize">عرض الصورة (مساحة خارجية)</label>
+                      <input
+                        type="range"
+                        id="inpImgSize"
+                        min="0"
+                        max="20"
+                        step="2"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="topImgCorners">زوايا علوية</label>
+                      <input
+                        type="range"
+                        id="topImgCorners"
+                        max="200"
+                        min="0"
+                      />
+                      <label for="bottomImgCorners">زوايا سفلية</label>
+                      <input
+                        type="range"
+                        id="bottomImgCorners"
+                        max="200"
+                        min="0"
+                      />
+                      <button id="linkImgCorners">
+                        ربط الزوايا العلوية والسفلية
+                      </button>
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpImgBorder">عرض إطار الصورة</label>
+                      <input
+                        id="inpImgBorder"
+                        type="range"
+                        max="5"
+                        min="0"
+                        step="1"
+                      />
+                      <label for="inpImgBorderColor">لون الإطار</label>
+                      <input type="color" id="inpImgBorderColor" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>تنسيق الوصف</h2>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-column"
+                  >
+                    <div class="mb-4">
+                      <label for="inpItemNameColor">لون اسم الصنف</label>
+                      <input type="color" id="inpItemNameColor" />
+                      <label for="inpItemNameSize">حجم خط الاسم</label>
+                      <input
+                        type="range"
+                        id="inpItemNameSize"
+                        max="35"
+                        min="15"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemDesColor">لون وصف الصنف</label>
+                      <input type="color" id="inpItemDesColor" />
+                      <label for="inpItemDesSize">حجم وصف الصنف</label>
+                      <input
+                        type="range"
+                        id="inpItemDesSize"
+                        max="30"
+                        min="10"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemPriceColor">لون سعرالصنف</label>
+                      <input type="color" id="inpItemPriceColor" />
+                      <label for="inpItemPriceSize">حجم سعرالصنف</label>
+                      <input
+                        type="range"
+                        id="inpItemPriceSize"
+                        max="30"
+                        min="10"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpCurrencyColor">لون خط العملة</label>
+                      <input type="color" id="inpCurrencyColor" />
+                      <label for="inpCurrencySize">حجم خط العملة</label>
+                      <input
+                        type="range"
+                        id="inpCurrencySize"
+                        max="25"
+                        min="5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>تصميم مربع الصنف</h2>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-column"
+                  >
+                    <div class="mb-4">
+                      <label for="inpItemBoxRadius">زوايا المربع</label>
+                      <input
+                        type="range"
+                        id="inpItemBoxRadius"
+                        max="200"
+                        min="0"
+                      />
+                      <label for="inpItemBoxBg" id="">لون الخلفية</label>
+                      <input type="color" id="inpItemBoxBg" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="inpItemBoxBorder">عرض إطار المربع</label>
+                      <input
+                        type="range"
+                        name=""
+                        id="inpItemBoxBorder"
+                        max="15"
+                        min="0"
+                        step="1"
+                      />
+                      <label for="inpItemBoxBorderColor">لون الإطار</label>
+                      <input type="color" id="inpItemBoxBorderColor" />
+                      <button id="linkBorderWithImg">
+                        ربط مع زوايا الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>تصميم زر اضف الى السلة :</h2>
+                  <div class="">
+                    <div class="d-flex">
+                      <div
+                        class="flex-fill border border-warning m-2 rounded-3 p-3"
+                      >
+                        <div
+                          id="cartBtnOne"
+                          class="cartBtnOne d-block position-relative text-center py-2"
+                        >
+                          <i
+                            id="cartBtnOneCart"
+                            class="fa-solid fa-cart-shopping position-absolute"
+                          ></i>
+                        </div>
+                        <button id="chooseCartOne" class="chooseCartOne">
+                          اختر الزر
+                        </button>
+                      </div>
+                      <div
+                        class="flex-fill border border-warning m-2 rounded-3 p-3"
+                      >
+                        <div
+                          id="cartBtnTwo"
+                          class="cartBtnTwo d-flex justify-content-center align-items-center text-center col"
+                        ></div>
+                        <button id="chooseCartTwo" class="chooseCartTwo">
+                          اختر الزر
+                        </button>
+                      </div>
+                      <div
+                        class="flex-fill border border-warning m-2 rounded-3 p-3"
+                      >
+                        <div
+                          id="cartBtnThree"
+                          class="cartBtnThree d-flex justify-content-center align-items-center text-center col"
+                        ></div>
+                        <button id="chooseCartThree" class="chooseCartThree">
+                          اختر الزر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tool bg-dark m-4">
+                <div>
+                  <h2>اختر التنسيق المناسب :</h2>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-column"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="outputItem col d-flex justify-content-center">
+              <div id="itemBox" class="itemBox position-sticky p-0 m-0">
+                <div
+                  class="imgDiv text-center d-flex justify-content-center align-items-center"
+                  id="imgDiv"
+                >
+                  <img id="itemImg" class="itemImg" src="" alt="" width="" />
+                </div>
+                <div class="m-2">
+                  <h3 id="itemTitle" class="m-0"></h3>
+                  <p id="itemDescription" class="m-0"></p>
+                  <div class="d-flex justify-content-between p-0 m-0">
+                    <div class="d-flex m-0 p-0">
+                      <p id="showPrice" class="m-0"></p>
+                      <span id="currencyType">..</span>
+                    </div>
+                    <div class="cartBtn" id="cartBtn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end workshop paragraph  -->
+      <!-- ======================================================================================================= -->
+      <!-- Mobile Mode  -->
+      <section>
+        <div class="container-sm myContainer">
+          <div class="m-4 row">
+            <div class="mobileModeBox d-flex">
+              <div class="mobileModeSetting col"></div>
+              <div class="mobileOutput col bg-light"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- design your store  -->
+      <section>
+        <div class="bg-dark">
+          <div class="container-sm myContainer text-warning contactMe">
+            <div>
+              <h3>تحتاج مساعدة في تصيم متجرك ؟ تواصل معنا</h3>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to action  -->
+      <section></section>
+      <!-- ======================================================================================================= -->
+      <!-- suggistion themes  -->
+      <section></section>
+    </div>
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <!-- JS links  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/main.js"></script>
+    <!-- <script src="JS/training.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,359 @@
+/* Control  */
+:root {
+  --main-color: #1e2f32;
+  --main-color-alt: #76e8cd;
+  --main-background-color: white;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --font-family: PingARLT;
+  --my-container: 0 7rem 0 7rem;
+  --font-family: "tajawal";
+  --transition: 0.1s;
+}
+/* my costumizing setting */
+@media (min-width: 1285px) {
+  .myContainer {
+    padding: var(--my-container);
+  }
+}
+body {
+  font-family: var(--font-family);
+}
+
+/* buttons setting  */
+.primaryBtn {
+  background-color: #2cd4d9;
+  color: black;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: 3px solid #2cd4d9;
+  border-radius: 30px 30px;
+  -webkit-border-radius: 30px 30px;
+  -moz-border-radius: 30px 30px;
+  -ms-border-radius: 30px 30px;
+  -o-border-radius: 30px 30px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.primaryBtn:hover {
+  background-color: transparent;
+  color: #2cd4d9;
+  border: 3px solid #2cd4d9;
+}
+.secondaryBtn {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: 3px solid white;
+  border-radius: 30px 30px;
+  -webkit-border-radius: 30px 30px;
+  -moz-border-radius: 30px 30px;
+  -ms-border-radius: 30px 30px;
+  -o-border-radius: 30px 30px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.secondaryBtn:hover {
+  background-color: #5333ed;
+  border: 3px solid #5333ed;
+}
+/* input design  */
+input,
+optgroup,
+textarea {
+  border-radius: 8px;
+  background-color: white;
+  height: 40px;
+  padding: 4px 4px;
+  box-shadow: 0px 0 9px gray;
+  border: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* navigation bar  */
+.navPara {
+  height: 15vh;
+  background-color: transparent;
+}
+
+/* introduction */
+.introPara {
+  height: 100vh;
+  background: linear-gradient(-45deg, black, black, #dd00b3, #115746);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+}
+.introPara h1 {
+  padding: 80px 50px 20px;
+}
+.introPara p {
+  padding: 10px 30px 30px;
+}
+.actionBtn {
+  padding: 5px 5px 20px;
+}
+.introImg {
+  width: 250px;
+  top: 0%;
+  right: 8%;
+  transform: translatex(20px);
+  -webkit-transform: translatex(20px);
+  -moz-transform: translatex(20px);
+  -ms-transform: translatex(20px);
+  -o-transform: translatex(20px);
+  z-index: 1;
+}
+
+.introBox {
+  width: 55%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+/* title paragraph */
+.titlePara {
+  height: 30vh;
+}
+/* workshop area  */
+.workShop {
+  background-color: rgba(241, 240, 240, 0.676);
+  padding: 20px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.settingBtns {
+  max-width: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.quickBtns {
+  top: 50px;
+  left: 0;
+}
+.cleanBtn,
+.backBtn {
+  border-radius: 5px;
+  background-color: darkblue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: yellow;
+  border: yellow 2px solid;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+}
+
+.toolsGroup {
+  min-width: 70%;
+}
+.tool {
+  height: 400px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.tool::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -25%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(#dd00b3, #dd00b540, #dd00b500, transparent);
+  border-radius: 60px 5px 80px 150px;
+  -webkit-border-radius: 60px 5px 80px 150px;
+  -moz-border-radius: 60px 5px 80px 150px;
+  -ms-border-radius: 60px 5px 80px 150px;
+  -o-border-radius: 60px 5px 80px 150px;
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  z-index: 0;
+}
+.tool:nth-child(2):before {
+  background: radial-gradient(#34dd00, #34dd0043, #34dd0000, transparent);
+}
+.tool:nth-child(3):before {
+  background: radial-gradient(#dd0000, #dd000027, #dd000000, transparent);
+}
+
+.tool:nth-child(4):before {
+  background: radial-gradient(#2c00dd, #2c00dd29, #2c00dd00, transparent);
+}
+.tool:nth-child(5):before {
+  background: radial-gradient(#fbff00e3, #fbff0052, #fbff0000, transparent);
+}
+.tool:nth-child(6):before {
+  background: radial-gradient(#dd00ad, #dd00ad3b, #dd00ad00, transparent);
+}
+.tool:hover::before {
+  transform: scale(4);
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+  z-index: 0;
+}
+.tool > div {
+  position: relative;
+  z-index: 5;
+  padding: 20px;
+}
+.tool > div h2 {
+  color: white;
+  font-size: 35px;
+}
+.tool > div label {
+  color: white;
+}
+/* output design  */
+.outputItem {
+  position: relative;
+  left: 0;
+  top: 0px;
+}
+.itemBox {
+  width: 200px;
+  height: 350px;
+  top: 50px;
+  bottom: 50px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.imgDiv {
+  height: 200px;
+  width: 200px;
+}
+.itemImg {
+  width: 100%;
+}
+
+/* contact me  */
+.contactMe {
+  min-height: 50vh;
+}
+
+/* Cart Btns designs  */
+.cartBtnOne {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 2px solid gray;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: rgb(255, 217, 0);
+}
+.cartBtnOne > i {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  top: 0.3px;
+  left: 0;
+  color: white;
+  background-color: red;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.cartBtnTwo {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: red;
+}
+.cartBtnThree {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: blue;
+}
+/* Mobile Mode  */
+.mobileOutput {
+  width: 200px;
+  height: 600px;
+  border: 2px black solid;
+}
+/* 
+==
+==
+==
+==
+== 
+*/
+/* ========================key frames animation code ========================= */
+/* introPara backgorund animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

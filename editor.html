@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Converter</title>
+  </head>
+
+  <body>
+    <div class="workSpace">
+      <h3>Change Image format to .webp</h3>
+      <input
+        class="btnStyle"
+        type="file"
+        id="imageInput"
+        accept="image/jpeg/png"
+        multiple
+      />
+      <button class="btnStyle" id="convertButton">
+        Convert to WebP and Download
+      </button>
+    </div>
+    <style>
+      body {
+        font-family: cursive;
+        background-color: rgb(128 128 128 / 30%);
+      }
+
+      h3 {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .workSpace {
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0 0 5px gray;
+        padding: 20px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .btnStyle {
+        padding: 10px;
+        border-radius: 10px;
+        border: 0;
+        box-shadow: 0 0 5px black;
+        cursor: pointer;
+        font-family: inherit;
+      }
+    </style>
+    <script>
+      document
+        .getElementById("convertButton")
+        .addEventListener("click", function () {
+          const inputImages = document.getElementById("imageInput").files;
+
+          if (inputImages.length === 0) {
+            alert("Please select one or more JPG images to convert.");
+            return;
+          }
+          const zip = new JSZip();
+          function convertAndSave() {
+            const promises = [];
+
+            for (let i = 0; i < inputImages.length; i++) {
+              const reader = new FileReader();
+
+              promises.push(
+                new Promise((resolve, reject) => {
+                  reader.onload = function (e) {
+                    const img = new Image();
+                    img.src = e.target.result;
+
+                    img.onload = function () {
+                      const canvas = document.createElement("canvas");
+                      const ctx = canvas.getContext("2d");
+                      canvas.width = img.width;
+                      canvas.height = img.height;
+                      ctx.drawImage(img, 0, 0, img.width, img.height);
+
+                      canvas.toBlob(function (blob) {
+                        const fileName =
+                          inputImages[i].name.replace(/\.[^/.]+$/, "") +
+                          ".webp";
+                        zip.file(fileName, blob);
+                        resolve();
+                      }, "image/webp");
+                    };
+                  };
+
+                  reader.readAsDataURL(inputImages[i]);
+                })
+              );
+            }
+
+            Promise.all(promises).then(() => {
+              zip.generateAsync({ type: "blob" }).then(function (content) {
+                const zipBlob = new Blob([content], {
+                  type: "application/zip",
+                });
+                const zipUrl = URL.createObjectURL(zipBlob);
+                const a = document.createElement("a");
+                a.href = zipUrl;
+                a.download = "converted_images.zip";
+                a.style.display = "none";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+              });
+            });
+          }
+
+          convertAndSave();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  </body>
+</html>
